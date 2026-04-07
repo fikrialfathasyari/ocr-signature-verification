@@ -36,3 +36,6 @@ This project simulates a document verification system that compares scanned docu
   "Jumlah TTD B": 4,
   "Hasil": "DITERIMA: TTD VALID & LENGKAP"
 }
+
+```markdown
+Model file is not included due to size and training constraints.
