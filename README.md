@@ -4,6 +4,8 @@ This project is based on a real-world internship case.
 Due to data confidentiality, the original dataset (government financial documents) cannot be shared.
 This repository uses simulated/sample data to demonstrate the workflow.
 
+Model file is not included due to size and training constraints.
+
 ## 📄 OCR Signature Verification System
 
 This project simulates a document verification system that compares scanned documents with digital versions using OCR and signature detection.
@@ -36,6 +38,3 @@ This project simulates a document verification system that compares scanned docu
   "Jumlah TTD B": 4,
   "Hasil": "DITERIMA: TTD VALID & LENGKAP"
 }
-
-```markdown
-Model file is not included due to size and training constraints.
