@@ -1,1 +1,7 @@
-
+ultralytics
+opencv-python
+numpy
+pdf2image
+rapidfuzz
+pytesseract
+pdfplumber
