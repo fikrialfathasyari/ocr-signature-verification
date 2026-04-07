@@ -33,20 +33,25 @@ The trained YOLO model file is not included due to size and training constraints
 ### System Demonstration
 Documents Comparison:
 ![Comparison](assets/comparison.png)
+
 What happen in the program:
 ![Demo Result](assets/demo_result.png)
 
-### Example Output
+### Output
 ```json
-{
-  "Similarity Text (%)": 92.5,
-  "Jumlah TTD A": 4,
-  "Jumlah TTD B": 4,
-  "Hasil": "DITERIMA: TTD VALID & LENGKAP"
-}
 {
   "Similarity Text (%)":96.7,
   "Jumlah TTD A": 0,
   "Jumlah TTD B": 3,
   "Hasil": "DITOLAK: TTD TIDAK LENGKAP"
 }
+```
+
+### Why is it rejected?
+This example uses a document that contains only **3 signatures**.
+
+However, the current system is configured to **require exactly 4 signatures** for validation.  
+As a result, the document is marked as **incomplete**.
+
+At this stage, the system does not dynamically determine how many signatures should be present.  
+The validation rule is still manually defined.
