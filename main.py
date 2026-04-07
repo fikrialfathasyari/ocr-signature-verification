@@ -114,8 +114,8 @@ def verify(docA, docB, sim_threshold=45):
 
 if __name__ == "__main__":
     result = verify(
-        r"sample_data/A.pdf",
-        r"sample_data/B.pdf"
+        r"sample_data/BeforeSignature.pdf",
+        r"sample_data/AfterSignature.pdf"
     )
     print(json.dumps(result, indent=4))
 
