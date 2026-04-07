@@ -31,7 +31,9 @@ The trained YOLO model file is not included due to size and training constraints
 5. Validate signatures  
 
 ### System Demonstration
-
+Documents Comparison:
+![Comparison](assets/comparison.png)
+What happen in the program:
 ![Demo Result](assets/demo_result.png)
 
 ### Example Output
