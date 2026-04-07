@@ -1,8 +1,8 @@
-## OCR Signature Verification System
+## An OCR-based document verification system developed from a real-world internship case.
 
 This project simulates a document verification system that compares scanned documents with digital versions using OCR and signature detection.
 
-### Note
+### Important Note
 This project is based on a real-world internship case.
 
 Due to data confidentiality, the original dataset (government financial documents) cannot be shared.  
@@ -31,10 +31,10 @@ The trained YOLO model file is not included due to size and training constraints
 5. Validate signatures  
 
 ### System Demonstration
-Documents Comparison:
+Document Comparison:
 ![Comparison](assets/comparison.png)
 
-What happen in the program:
+What happens in the system:
 ![Demo Result](assets/demo_result.png)
 
 ### Output
@@ -55,3 +55,8 @@ As a result, the document is marked as **incomplete**.
 
 At this stage, the system does not dynamically determine how many signatures should be present.  
 The validation rule is still manually defined.
+
+### Insight
+
+This project highlights how rule-based validation can be effective but also limited.  
+Future improvements could include dynamic detection of required signatures based on document type.
