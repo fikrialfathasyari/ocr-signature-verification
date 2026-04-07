@@ -6,7 +6,16 @@ This repository uses simulated/sample data to demonstrate the workflow.
 
 Model file is not included due to size and training constraints.
 
-## 📄 OCR Signature Verification System
+### Additional Test Case (Non-Target Document)
+
+Data used and examples shows a document outside the system's intended use case.
+
+The system is designed specifically for classified financial documents with 4 signatures.  
+In this case, only 3 signatures are present, so the system correctly identifies it as incomplete.
+
+This demonstrates the system's rule-based validation behavior.
+
+## OCR Signature Verification System
 
 This project simulates a document verification system that compares scanned documents with digital versions using OCR and signature detection.
 
@@ -30,7 +39,7 @@ This project simulates a document verification system that compares scanned docu
 4. Compare text similarity
 5. Validate signatures
 
-### 📊 Example Output
+### Example Output
 ```json
 {
   "Similarity Text (%)": 92.5,
