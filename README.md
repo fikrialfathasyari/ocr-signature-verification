@@ -1,43 +1,38 @@
-Note:
-This project is based on a real-world internship case.
-
-Due to data confidentiality, the original dataset (government financial documents) cannot be shared.
-This repository uses simulated/sample data to demonstrate the workflow.
-
-Model file is not included due to size and training constraints.
-
-### Additional Test Case (Non-Target Document)
-
-Data used and examples shows a document outside the system's intended use case.
-
-The system is designed specifically for classified financial documents with 4 signatures.  
-In this case, only 3 signatures are present, so the system correctly identifies it as incomplete.
-
-This demonstrates the system's rule-based validation behavior.
-
 ## OCR Signature Verification System
 
 This project simulates a document verification system that compares scanned documents with digital versions using OCR and signature detection.
 
+### Note
+This project is based on a real-world internship case.
+
+Due to data confidentiality, the original dataset (government financial documents) cannot be shared.  
+This repository uses simulated/sample data to demonstrate the workflow.
+
+The trained YOLO model file is not included due to size and training constraints.
+
 ### Features
-- Document text comparison using OCR
-- Signature detection using YOLOv8
-- Signature similarity checking (ORB)
-- Automated validation system
+- Document text comparison using OCR  
+- Signature detection using YOLOv8  
+- Signature similarity checking (ORB)  
+- Rule-based validation system  
 
 ### Tech Stack
-- Python
-- YOLOv8 (Ultralytics)
-- OpenCV
-- Tesseract OCR
-- RapidFuzz
+- Python  
+- YOLOv8 (Ultralytics)  
+- OpenCV  
+- Tesseract OCR  
+- RapidFuzz  
 
 ### How It Works
-1. Convert PDF to image
-2. Detect signature regions using YOLO
-3. Extract text using OCR
-4. Compare text similarity
-5. Validate signatures
+1. Convert PDF to image  
+2. Detect signature regions using YOLO  
+3. Extract text using OCR  
+4. Compare text similarity  
+5. Validate signatures  
+
+### System Demonstration
+
+![Demo Result](assets/demo_result.png)
 
 ### Example Output
 ```json
@@ -46,4 +41,10 @@ This project simulates a document verification system that compares scanned docu
   "Jumlah TTD A": 4,
   "Jumlah TTD B": 4,
   "Hasil": "DITERIMA: TTD VALID & LENGKAP"
+}
+{
+  "Similarity Text (%)":96.7,
+  "Jumlah TTD A": 0,
+  "Jumlah TTD B": 3,
+  "Hasil": "DITOLAK: TTD TIDAK LENGKAP"
 }
